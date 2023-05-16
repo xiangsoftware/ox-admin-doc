@@ -7,14 +7,14 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
+      title: "OX-ADMIN 在线文档",
+      description: "一个基于springboot开发的简单、高效、规范、前后端分离的后台管理系统管理框架",
     },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
-    },
+    // "/zh/": {
+    //   lang: "zh-CN",
+    //   title: "文档演示",
+    //   description: "vuepress-theme-hope 的文档演示",
+    // },
   },
 
   theme,

@@ -3,15 +3,15 @@ home: true
 icon: home
 title: 项目主页
 heroImage: /logo.svg
-heroText: 项目名称
-tagline: 你可以在这里放置或是整个项目的描述。
+heroText: OX-ADMIN
+tagline: 一个基于springboot开发的简单、高效、规范、前后端分离的后台管理系统管理框架。
 actions:
   - text: 使用指南 💡
-    link: /zh/demo/
+    link: /demo/
     type: primary
 
   - text: 文档
-    link: /zh/guide/
+    link: /guide/
 
 features:
   - title: Markdown 增强
