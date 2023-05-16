@@ -12,8 +12,17 @@ export const zhNavbar = navbar([
         icon: "creative",
         prefix: "bar/",
         children: [
-          { text: "项目简介", icon: "more", link: "" }
+            "baz",
+          { text: "开发初衷", icon: "more", link: "" },
+            "aaa",
+          { text: "项目简介", icon: "more", link: "" },
         ],
+      },
+      {
+        text: "Foo",
+        icon: "config",
+        prefix: "foo/",
+        children: ["ray", { text: "...", icon: "more", link: "" }],
       },
     ],
   },
