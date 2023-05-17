@@ -3,8 +3,8 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
-
+  base: "/docs/",
+  dest: "/docs",
   locales: {
     "/": {
       lang: "zh-CN",
