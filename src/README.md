@@ -7,7 +7,7 @@ heroText: OX-ADMIN
 tagline: 一个基于springboot开发的简单、高效、规范、前后端分离的后台管理系统管理框架。
 actions:
   - text: 使用指南 💡
-    link: /demo/
+    link: /guide/
     type: primary
 
   - text: 文档

@@ -4,7 +4,6 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
   author: {
     name: "青牛",
     url: "https://github.com/java668",
@@ -14,10 +13,11 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "java668/ox-admin-doc",
+  repo: "java668/ox-admin",
 
-  docsDir: "demo/theme-docs/src",
+  docsDir: "/src",
 
+  editLink: false,
   locales: {
     // "/": {
     //   // navbar
@@ -45,13 +45,13 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "",
 
       displayFooter: true,
 
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: "编辑此页 ",
       },
     },
   },

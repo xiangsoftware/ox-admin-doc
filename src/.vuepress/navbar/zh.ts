@@ -5,6 +5,7 @@ export const zhNavbar = navbar([
   {
     text: "开发指南",
     icon: "creative",
+    link: "/guide/",
     prefix: "/guide/",
     children: [
       {
