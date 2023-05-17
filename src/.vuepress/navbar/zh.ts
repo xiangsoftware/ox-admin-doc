@@ -26,10 +26,10 @@ export const zhNavbar = navbar([
       },
     ],
   },
-  { text: "案例", icon: "discover", link: "/demo/" },
+  { text: "开发教程", icon: "discover", link: "/demo/" },
   {
-    text: "V2 文档",
+    text: "项目演示",
     icon: "note",
-    link: "https://theme-hope.vuejs.press/zh/",
+    link: "http://oxadmin.java668.com",
   },
 ]);
