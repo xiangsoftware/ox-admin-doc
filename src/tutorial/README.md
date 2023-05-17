@@ -1,5 +1,5 @@
 ---
-title: 指南
+title: 开发教程
 icon: creative
 ---
 
