@@ -1,31 +1,32 @@
-name: Deploy to GitHub Pages
+# name 可以自定义
+name: Deploy GitHub Pages
 
+# 触发条件：在 push 到 main/master 分支后，新的 Github 项目 应该都是 main，而之前的项目一般都是 master
 on:
   push:
     branches:
-      - main  # 将这里的分支名称改为您的主分支名称
+      - main
 
+# 任务
 jobs:
-  deploy:
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      # 拉取代码
+      - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
         with:
-          node-version: 16
+          persist-credentials: false
 
-      - name: Install dependencies
-        run: npm install  # 如果您的网页项目有依赖，请修改此处的安装命令
-
+      # 生成静态文件
       - name: Build
-        run: npm run docs:build  # 如果您的网页项目需要构建，请修改此处的构建命令
+        run: npm install && npm run docs:build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      # 部署到 GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src/.vuepress/dist  # 如果您的构建输出目录不同，请修改此处的路径
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
+          BRANCH: gh-pages # 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
+          FOLDER: docs/.vuepress/dist # vuepress 生成的静态文件存放的地方
