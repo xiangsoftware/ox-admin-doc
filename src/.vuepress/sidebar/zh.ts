@@ -12,7 +12,7 @@ export const zhSidebar = sidebar({
         {
             text: "后端手册",
             icon: "java",
-            prefix: "guide/",
+            prefix: "code-gen/",
             children: "structure",
         },
         {

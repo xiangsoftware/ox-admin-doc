@@ -21,8 +21,8 @@ export const zhNavbar = navbar([
       {
         text: "后端手册",
         icon: "java",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "more", link: "" }],
+        prefix: "code-gen/",
+        children: ["gen.md"],
       },
       {
         text: "前端手册",
